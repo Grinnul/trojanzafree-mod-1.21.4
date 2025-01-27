@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "trojanzafree",
+	"version": "${version}",
+	"name": "Trojanzafree Mod",
+	"description": "Mod na server Trojanzafree. Stworzone przez Grinnul the Dev. Nie publikować poza server!",
+	"authors": [
+		"Grinnul the Dev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/trojanzafree/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.grinnul.trojanzafree.TrojanzafreeMod"
+		],
+		"client": [
+			"net.grinnul.trojanzafree.TrojanzafreeModClient"
+		],
+		"fabric-datagen": [
+			"net.grinnul.trojanzafree.TrojanzafreeModDataGenerator"
+		]
+	},
+	"mixins": [
+		"trojanzafree.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
